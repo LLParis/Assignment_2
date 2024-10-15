@@ -1,15 +1,24 @@
 import java.util.ArrayList;
 /**
  * 
- * @author YOUR NAME 
+ * @author London Paris
  *
  */
 
-public class CustomerData 
+public class CustomerData extends PersonData
 {
     private int customerNumber;
     private boolean mailingList;
     private ArrayList<Long> transactions;
+
+    /**
+     * Non-argument Constructor
+     */
+    public CustomerData() {
+        this.customerNumber = 0;
+        this.mailingList = false;
+        this.transactions = new ArrayList<Long>();
+    }
 
     public String toString()
     {
